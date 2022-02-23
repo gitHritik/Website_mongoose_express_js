@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body> 
+   {{!-- Navbar started --}}
+     {{>navbar}}
+   {{!-- Navbar end --}}
+
+
+   {{!-- Home page started --}}
+          <div class="container-fluid mt-5">
+            <div class="row">
+              <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                  <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+                    <h1>WE WILL HELP YOU TO</h1>
+                    <h1>GROW YOUR BUSSINESS</h1>
+                    <p>We Are The Team of <span class="bold-style">Professional developer</span> </p>
+                    <button class="btn-style btn-primary">Read More</button>
+                  </div>
+                  {{!-- right side --}}
+                  <div class="col-md-6 col-12 hero-text order-md-0 order-1">
+                    <figure>
+                      <img style="width: 577px;" src="Images/growth.png" alt="">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   {{!-- Home page end --}}
+
+   {{!-- About page started --}}
+          {{>about}}
+   {{!-- About page end --}}
+
+
+   {{!-- Services page started --}}
+          {{>service}}
+   {{!-- Services page end --}}
+
+   {{!-- Maps page started --}}
+          {{>maps}}
+   {{!-- Maps page end --}}
+
+
+   {{!-- Contact page started --}}
+          {{>contact}}
+   {{!-- Contact page end --}}
+
+    <script src="../jq/jquery.js"></script>
+    <script src="../js/boostrap.js"></script>
+ </body>
+</html>
